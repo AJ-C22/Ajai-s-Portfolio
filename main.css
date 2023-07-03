@@ -23,7 +23,7 @@
     justify-content: center;
 }
 .headingTitle h1{
-    font-size: xx-large;
+    font-size: 3.5rem;
     color: white;
 }
 .headingTitle p{
@@ -199,7 +199,8 @@ section{
 .portfolios{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    grid-row-gap: 6rem;
+    grid-column-gap: 4rem;
     margin-top: 3rem;
     .portfolio-item{
         position: relative;
@@ -246,6 +247,7 @@ section{
         cursor: pointer;
         transition: all .4s ease-in-out;
         color: white;
+        text-decoration: none;
         &:hover{
             background-color:#505557;
         }
