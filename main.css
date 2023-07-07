@@ -71,6 +71,7 @@
     color: rgb(105, 102, 102);
     text-decoration: none;
     width: 100%;
+    font-size: 1rem;
 }
 
 .navbar li a:hover{
@@ -82,7 +83,56 @@
     color: rgb(173, 167, 167);
 }
 
+.about-page{
+    display: flex;
+    position: fixed;
+    background: black;
+    opacity: 0%;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    z-index: -1;
+    overflow: hidden;
 
+}
+.open-about{
+    opacity: 80%;
+    z-index: 900;
+
+}
+
+.btn{
+    background-color: transparent;
+    border: transparent;
+    font-weight: bold;
+    letter-spacing: 0.05cm;
+    color: rgb(105, 102, 102);
+    text-decoration: none;
+    width: 100%;
+    font-size: 1rem;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.about-page button{
+
+    background-color: transparent;
+    border: transparent;
+    color: rgb(105, 102, 102);
+    cursor: pointer;
+    outline: none;
+    transform: translate(14000%, -46%);
+
+    font-size: 1.5rem;
+    font-weight: 800;
+
+}
+
+.fade-in{
+    opacity: 1;
+}
 @keyframes animate{
     0%{
         background-position:0 50%;

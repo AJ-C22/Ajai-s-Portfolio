@@ -12,3 +12,16 @@ function changeBg(){
 }
 
 window.addEventListener('scroll', changeBg);
+
+let about = document.getElementById("about");
+
+function openAbout(){
+    about.classList.toggle("open-about");
+
+}
+
+function closeAbout(){
+    about.classList.remove("open-about");
+
+}
+
