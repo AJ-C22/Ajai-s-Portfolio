@@ -29,21 +29,27 @@
 .headingTitle h1{
     font-size: 3.5rem;
     color: white;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+
 }
 .headingTitle p{
-    font-size: large;
+    font-size: 1.3rem;
     color: grey;
     letter-spacing: normal;
     text-align: center;
-    opacity: 0;
-    animation: slideBottom 1s ease forwards;
-    animation-delay: .7s;
+    opacity: 1;
+    animation-delay: 1s;
 } 
-.headingTitle p:nth-of-type(2){
-    animation: slideTop 1s ease forwards;
-    animation-delay: .7s;
-}
 
+span{
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker{
+    50%{
+        opacity: 0;
+    }
+}
 
 @keyframes slideBottom {
     0%{
