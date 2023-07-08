@@ -35,8 +35,50 @@
     color: grey;
     letter-spacing: normal;
     text-align: center;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
 } 
+.headingTitle p:nth-of-type(2){
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
 
+
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 /*Navbar*/
 .navbar{
     color:whitesmoke;
@@ -50,7 +92,11 @@
     z-index:200;
     transition: .3s;
 }
-
+.navbar a{
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
 .bgColor{
     transition: all .7s;
     background-color: #222222;
@@ -84,7 +130,6 @@
 }
 
 .about-page{
-    display: flex;
     position: fixed;
     background: black;
     opacity: 0%;
@@ -96,9 +141,42 @@
     z-index: -1;
     overflow: hidden;
 
+    padding: 40px 40px;
+    color: white;
+
+    
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+.double-column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+     flex: 1.5;
+}
+
+.about-col-1{
+    height: 100vh;
+    background-color: red;
+
+}
+.about-col-2{
+    height: 100%;
+    background-color: blue;
+
 }
 .open-about{
-    opacity: 80%;
+    opacity: 85%;
     z-index: 900;
 
 }
@@ -123,11 +201,12 @@
     color: rgb(105, 102, 102);
     cursor: pointer;
     outline: none;
-    transform: translate(14000%, -46%);
+
 
     font-size: 1.5rem;
     font-weight: 800;
-
+    top: 0;
+    right: 0;
 }
 
 .fade-in{

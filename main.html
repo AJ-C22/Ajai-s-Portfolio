@@ -17,22 +17,22 @@
     <nav class="navbar" id = "navbar">
         <ul class = "nav-links">
             <li>
-                <a href="#home" class = "active">Home</a>
+                <a href="#home" style = "--i:1" class = "active">Home</a>
             </li>  
             <li>
-                <button class = "btn" onclick ="openAbout()" onclick = "fadeIn()">About</button>
+                <button class = "btn" onclick ="openAbout()" onclick = "fadeIn()" style = "--i:2">About</button>
             </li>  
             <li>
-                <a href="#experience">Experience</a>
+                <a href="#experience" style = "--i:3">Experience</a>
             </li>
             <li>
-                <a href="#skills">Skills</a>
+                <a href="#skills" style = "--i:4">Skills</a>
             </li>
             <li>
-                <a href="#portfolio">Portfolio</a>
+                <a href="#portfolio" style = "--i:5">Portfolio</a>
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact" style = "--i:6">Contact</a>
             </li>
         </ul>
     
@@ -42,16 +42,32 @@
         <div class = "mainTitle" id = "home">
             <div class = "headingTitle">
                 <h1>AJAI CHANDI </h1> 
-                <p> Aspiring Data Scientist / Developer </p>
+                <p> <span>Aspiring Data Scientist / Developer </span></p>
             </div>  
         </div>
 
+<!----------------- About Section Design ------------------->
+
 <div class = "about-page" id ="about">
-    <button class ="button" onclick="closeAbout()">X</button>
+    <div class="row">
+        <div class="double-column">
+            <div class = "about-col-1">
+                <h1>About Me</h1>
+            </div>
+        </div>
+    
+        <div class="column">
+            <div class="about-col-2">
+                <button class ="button" onclick="closeAbout()">X</button>
+
+            </div>
+        </div>
+    </div>
+ 
 
 
 </div>
-<!-- Experience Section Design -->
+<!----------------- Experience Section Design ------------------->
 
     <section class="education" id="experience">
         <h2 class = "heading"> My <span> Journey </span></h2>
@@ -102,12 +118,12 @@
                 </div>
             </div>
     </section>
-<!--Skills Section Design-->
+<!----------------------Skills Section Design-------------------->
     <section class="skills" id="skills">
         <h2 class = "heading"> Skills </span></h2>
     </section>
 
-<!--Portofolio Section Design -->
+<!---------------------Portofolio Section Design------------------->
 
     <section class="portfolio" id="portfolio">
         <h2 class = "heading"> My <span> Portfolio </span></h2>
@@ -207,7 +223,8 @@
     </div>
 </section>
 
-<!--Contact Design Section-->
+<!-------------------Contact Design Section---------------------->
+
 <section class = "contact" id="contact">
     <h2 class = "heading"> Contact <span> Me</span></h2>
 
