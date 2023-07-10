@@ -693,10 +693,21 @@ i{
 
 /*BREAKPOINTS*/
 
+@media (max-width: 1500px){
+    .port-text{
+        font-size: 30% !important;
+        line-height: 400% !important;
+    }
+    .port-title{
+        font-size: 80% !important;
+    }
+}
 @media (max-width: 1200px){
     html{
         font-size: 75%;
+
     }
+    
 }
 
 @media (max-width: 991px){
@@ -707,6 +718,7 @@ i{
     section {
         padding: 10rem 4% 2rem;
     }
+
 }
 
 @media (max-width: 768px){
@@ -714,5 +726,6 @@ i{
         display: block;
     }
 }
+
 
 
