@@ -357,6 +357,7 @@ section{
     background-color: #242424;
     min-height: auto;
     padding-bottom: 7rem;
+
 }
 
 .skills .skills-row{
@@ -690,6 +691,28 @@ i{
     width: 100%;
 }
 
+/*BREAKPOINTS*/
 
+@media (max-width: 1200px){
+    html{
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 991px){
+    .navbar{
+        padding: 2rem 4%;
+    }
+
+    section {
+        padding: 10rem 4% 2rem;
+    }
+}
+
+@media (max-width: 768px){
+    #menu-icon {
+        display: block;
+    }
+}
 
 
