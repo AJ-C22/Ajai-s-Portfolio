@@ -45,46 +45,7 @@
 .headingTitle span{
     animation: blinker 1s linear infinite;
 }
-@keyframes blinker{
-    50%{
-        opacity: 0;
-    }
-}
 
-@keyframes slideBottom {
-    0%{
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-
-    100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideTop {
-    0%{
-        transform: translateY(100px);
-        opacity: 0;
-    }
-
-    100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-@keyframes slideLeft {
-    0%{
-        transform: translateX(100px);
-        opacity: 0;
-    }
-
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
 /*Navbar*/
 .navbar{
     color:whitesmoke;
@@ -98,10 +59,13 @@
     z-index:200;
     transition: .3s;
 }
+.nav-links{
+    position: relative !important;
+}
 .navbar a{
     opacity: 0;
-    animation: slideTop .5s ease forwards;
-    animation-delay: calc(.2s * var(--i));
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.35s * var(--i));
 }
 .bgColor{
     transition: all .7s;
@@ -691,6 +655,22 @@ i{
     width: 100%;
 }
 
+/*ANIMATION RELOAD & SCROLL*/
+.animate{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+    z-index: 98;
+}
+
+.navbar .animate {
+    animation: showRight 1s ease forwards;
+    animation-delay: calc(.1s * var(--i))
+}
+
 /*BREAKPOINTS*/
 
 @media (max-width: 1500px){
@@ -727,5 +707,50 @@ i{
     }
 }
 
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
 
+@keyframes blinker{
+    50%{
+        opacity: 0;
+    }
+}
+
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
