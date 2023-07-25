@@ -448,7 +448,7 @@ section{
     text-align: center;
 }
 
-.portfolio h2{
+.portfolio h2{ 
 
     display: inline-block;
     left: 50%;
@@ -532,7 +532,7 @@ i{
     height: 100%;
     object-fit: cover;
 }
-.portfolio-desc{
+h3{
     font-size: 1.2rem;
     padding-top: 1rem;
     align-items: center;
