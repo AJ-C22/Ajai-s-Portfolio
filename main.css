@@ -443,10 +443,6 @@ section{
 
  /***********************************Portfolio Section*************************************/
 
-.port-text{
-    padding: 2rem 0;
-    text-align: center;
-}
 
 .portfolio h2{ 
 
@@ -474,74 +470,63 @@ section{
             opacity: 0;
             position: absolute;
             left: 0;
-            top: 0;
+            bottom: 0;
             display: flex;
             justify-content:first baseline;
             align-items: baseline;
             flex-direction: column;
             transform: scale(0);
             transition: all .5s ease;
-            
-            .port-title{
-                margin-top: 2rem;
-                margin-left: 2rem;
-                font-size: 3.5rem;
-                color: white;
-                margin-bottom: 1.5rem;
-            }
-            .port-text{
-                padding-left: 2rem;
-                padding-right: 2rem;
-                margin-bottom: 2rem;
-                text-align: left;
-                font-size: 1.3rem;
-                line-height: 2rem;
 
-            }
+            justify-content: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 0 4rem;
+            
+            
         } 
     } 
 }
 
-.icons{
-    justify-content: last baseline;
-    position: absolute;
-    display: flex;
-    margin-top: 65% ;
-    margin-left: 75%;
-    
+.port-title{
+    font-size: 2rem;
 }
-.icon{
-        background-color: black;
-        border-radius: 50%;
-        width: 55px;
-        height: 55px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin: 0 0.5rem;
-        cursor: pointer;
-        transition: all .4s ease-in-out;
-        color: white;
-        text-decoration: none;
-        &:hover{
-            background-color:#505557;
-        }
+.port-text{
+    font-size: 1rem;
+    margin: .3rem 0 1rem; 
 }
 
-i{
-    font-size: 1.3rem;
+
+.hover-items a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: red;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    &:hover{
+        background-color:#505557;
+    }
 }
+
+.hover-items a i {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
 .portfolio-item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-.portfolio-desc{
-    font-size: 1.2rem;
-    padding-top: 1rem;
-    align-items: center;
-    display: flex;
-    justify-content: center;
 }
 
 .portfolio-item:hover .hover-items{
@@ -722,21 +707,15 @@ section:nth-child(odd) .animate.scroll {
 /****************************BREAKPOINTS******************************/
 
 @media (max-width: 1500px){
-    .port-text{
-        font-size: 30% !important;
-        line-height: 400% !important;
-    }
-    .port-title{
-        font-size: 80% !important;
-    }
+   
 }
+
 @media (max-width: 1200px){
     html{
         font-size: 75%;
-
     }
-    
 }
+
 
 @media (max-width: 991px){
     .navbar{
@@ -746,13 +725,16 @@ section:nth-child(odd) .animate.scroll {
     section {
         padding: 10rem 4% 2rem;
     }
-
 }
 
 @media (max-width: 768px){
     #menu-icon {
         display: block;
     }
+
+    .portfolios {
+        grid-template-columns: repeat(2,1fr);
+    }    
 }
 @media (max-width: 617px) {
     .portfolios {
