@@ -69,6 +69,7 @@
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: calc(.35s * var(--i));
+    transition: all .35s ease;
 }
 .bgColor{
     transition: all .7s;
@@ -95,11 +96,13 @@
 
 .navbar li a:hover{
     color: rgb(160, 154, 154);
+
 }
 
 .navbar a:hover,
 .navbar a.active{
     color: rgb(173, 167, 167);
+    
 }
 
 .about-page{
@@ -453,7 +456,7 @@ section{
 .portfolios{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 6rem;
+    grid-row-gap: 1rem;
     grid-column-gap: 1rem;
     margin-top: 3rem;
 
@@ -475,7 +478,7 @@ section{
             justify-content:first baseline;
             align-items: baseline;
             flex-direction: column;
-            transform: scale(0);
+            transform: scale(1.05);
             transition: all .5s ease;
 
             justify-content: center;
@@ -536,6 +539,105 @@ section{
 
 /********************************Contact Section********************************/
 
+
+.contact{
+    background-color: #242424;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.contact-text h4{
+    color: white;
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.contact-text h2{
+    line-height: 1;
+    font-size: 55px;
+    position: relative;
+}
+
+.contact-text p{
+    color:rgb(173, 167, 167);
+    line-height: 1.8;
+    margin-bottom: 30px;
+    position: relative;
+}
+.list{
+    position: relative;
+    margin-bottom: 2.8rem;
+    list-style:none;
+}
+.list li{
+    margin-bottom: 12px;
+}
+.list li a{
+    display: block;
+    color:rgb(173, 167, 167);
+    font-size: 14px;
+    transition: all .45s ease;
+    text-decoration:none;
+}
+
+.list li a:hover{
+    color: white;
+    transform: translateY(4px);
+}
+.contact-icons{
+    position: relative;
+}
+.contact-icons i{
+  
+    height: 45px;
+    width: 45px;
+    color: rgb(173, 167, 167);
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+.contact-icons i:hover{
+    color: white;
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input, form textarea{
+    width: 100%;
+    padding: 14px;
+    background: rgb(44, 43, 43);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 240px;
+}
+
+.contact form .submit{
+    display: inline-block;
+    font-size: 16px;
+    background-color:rgb(105, 102, 102);
+    color: white;
+    width: 160px;
+    transition: all .45s ease;;
+}
+.contact-form .submit:hover{
+    transform: scale(1.07);
+    cursor: pointer;
+}
+/*
 .contact {
     min-height: auto;
     padding-bottom: 7rem;
@@ -661,7 +763,7 @@ section{
 .btn-box .btn:hover::before {
     width: 100%;
 }
-
+*/
 /*****************************ANIMATION RELOAD & SCROLL*****************************/
 .animate{
     position: absolute;
@@ -687,7 +789,7 @@ section{
     animation: none;
 }
 
-section:nth-child(odd) .animate.scroll {
+section:nth-child(even) .animate.scroll {
     background: #222222;
 }
 
