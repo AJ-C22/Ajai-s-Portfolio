@@ -104,8 +104,17 @@
     color: rgb(173, 167, 167);
     
 }
+/******************************************About Section***********************************************/
 
+span {
+    color:rgb(173, 167, 167);
+}
 .about-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
     position: fixed;
     background: black;
     opacity: 0%;
@@ -120,47 +129,21 @@
     padding: 50px 50px;
     color: white;
 }
-.about-page h1{
-    font-size: 4rem;
-    max-width: 90%;
-    max-height: 90%;
-}
-.about-page h3{
-    color: rgb(173, 167, 167);
-    padding-top: 23px;
-    max-width:90%;
-    line-height: 2.3rem;
-    letter-spacing: 1px;
-    font-size: 1.3rem;
-}
-.row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width:100%;
-}
-.column{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-   margin-left: 7rem;
-    
-}
-.double-column{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-     flex: 1.5;
-}
 
-.about-col-1{
-    height: 100vh;
-
+.about-img img{
+    width: 40vw;
 
 }
-.about-col-2{
-    height: 100%;
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+.about-content h3{
+    font-size: 2rem;
+}
+.about-content p{
+    font-size: 1.2rem;
+    margin: 2rem 0 3rem;
 }
 .open-about{
     opacity: 85%;
@@ -171,7 +154,7 @@
 .btn{
     background-color: transparent;
     border: transparent;
-    font-weight: bold;
+    font-weight: 600;
     letter-spacing: 0.05cm;
     color: rgb(105, 102, 102);
     text-decoration: none;
@@ -181,8 +164,9 @@
     cursor: pointer;
 }
 
-.about-page button{
+.about-page .button{
 
+    position: absolute;
     background-color: transparent;
     border: transparent;
     color: rgb(105, 102, 102);
@@ -194,20 +178,64 @@
     font-weight: 800;
     top: 0;
     right: 0;
+    margin-top: 15px;
+    margin-right: 25px;
+}
+.about-page .button:hover{
+    color:rgb(173, 167, 167)
 }
 
 .fade-in{
     opacity: 1;
 }
 
-.about-col-2 img{
-    margin-top: 120px;
-    position: absolute;
-    border-radius: 15px;
-    height: 60vh;
-    
-
+.about-icons{
+    position: relative;
 }
+.about-icons a{
+    
+   display: inline-flex;
+   justify-content:center ;
+   align-items: center;
+   width:3.3rem;
+   height: 3.3rem;
+   background-color: transparent;
+   border: .2rem solid white;
+   border-radius: 50%;
+   box-shadow: 0 .2rem .5rem rgb(160, 154, 154);
+   font-size: 1.5rem;
+   color: white;
+   margin: -1rem 1.5rem 2rem 0;
+   text-decoration: none;
+   transition: .5s ease;
+}
+.about-icons a:hover{
+    background: white;
+    color: black;
+}
+
+.about-page .btn{
+    display: inline-block;
+    padding: 0.8rem 2.8rem;
+    background: white;
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .5rem rgb(105, 102, 102);
+    font-size: 1rem;
+    color: black;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+    width: 200px;
+    height: 60px;
+}
+
+.about-page .btn:hover{
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+/********************************************Experience Section********************************************/
 
 section{
     min-height: 100vh;
@@ -216,7 +244,6 @@ section{
     color: white 
 }
 
-/********************************************Experience Section********************************************/
 
 .heading{
     z-index: 100;

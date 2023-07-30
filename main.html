@@ -61,26 +61,24 @@
 <!----------------- About Section Design ------------------->
 
 <div class = "about-page" id ="about">
-    <div class="row">
-        <div class="double-column">
-            <div class = "about-col-1">
-                <h1>About Me</h1>
-                <h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed ante pulvinar,  erat tincidunt convallis. Mauris tellus tortor, luctus ut consectetur vitae, vulputate sed libero. Integer felis dolor, sodales in augue vel, gravida tempus nulla. Donec ac ante auctor, convallis enim gravida, ornare tellus. Mauris aliquet iaculis sem, id tempor odio varius vel. Nunc facilisis nibh eget elit rutrum auctor. Curabitur non urna quis orci pharetra lacinia sit amet eu neque. Orci varius natoque pena <br/><br> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed ante pulvinar,  erat tincidunt convallis. Mauris tellus tortor, luctus ut consectetur vitae, vulputate sed libero. Integer felis dolor, sodales in augue vel, gravida tempus nulla. Donec ac ante auctor, convallis enim gravida, ornare tellus. Mauris aliquet iaculis sem, id tempor odio varius vel. Nunc facilisis nibh eget elit rutrum auctor. Curabitur non urna quis orci pharetra lacinia sit amet eu neque. Orci varius natoque pena</h3>
-            </div>
-        </div>
-    
-        <div class="column">
-            <div class="about-col-2">
-
-                <button class ="button" onclick="closeAbout()">X</button>
-                <img src = "Images/User.jpg" alt = "">
-            </div>
-        </div>
+    <a button class = "button" onclick ="closeAbout()">X</button></a>
+    <div class = "about-img">
+        <img src = "Images/user.jpg" alt="">
     </div>
- 
 
-
+    <div class = "about-content">
+        <h2 class = "heading">About <span>Me</span></h2>
+        <h3>Blah blah blah blah blah</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed ante pulvinar,  erat tincidunt convallis. Mauris tellus tortor, luctus ut consectetur vitae, vulputate sed libero. Integer felis dolor, sodales in augue vel, gravida tempus nulla. Donec ac ante auctor, convallis enim gravida, ornare tellus. Mauris aliquet iaculis sem, id tempor odio varius vel. Nunc facilisis nibh eget elit rutrum auctor. 
+           Curabitur non urna quis orci pharetra lacinia sit amet eu neque. Orci varius natoque pena</p>
+        <div class = "about-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="#" class = "btn">Read More</a>
+        
+    </div>
 </div>
 <!----------------- Experience Section Design ------------------->
 
@@ -342,7 +340,7 @@
                 <input type = "email" placeholder = "Your Email" required>
                 <input type = "nukber" placeholder = "Your Phone Number" required>
                 <textarea name = "" id="" cols="35" rows ="10" placeholder = "Text"></textarea>
-                <input type = "submite" value="Send Message" class = "submit" required>
+                <input type = "submit" value="Send Message" class = "submit" required>
 
                 <span class = "animate scroll" style ="--i:5"></span>
             </form>
