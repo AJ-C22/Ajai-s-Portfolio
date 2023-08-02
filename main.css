@@ -520,7 +520,16 @@ section{
         } 
     } 
 }
-
+.portfolios :nth-child(3){
+    .port-title{
+        font-size: 1.4rem;
+    }
+}
+.portfolios :nth-child(5){
+    .port-title{
+        font-size: 1.63rem;
+    }
+}
 .port-title{
     font-size: 2rem;
 }
