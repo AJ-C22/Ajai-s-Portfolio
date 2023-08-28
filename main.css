@@ -845,12 +845,14 @@ section:nth-child(even) .animate.scroll {
 /****************************BREAKPOINTS******************************/
 
 @media (max-width: 1500px){
-   
+   html{
+    font-size: 80%;
+   }
 }
 
 @media (max-width: 1200px){
     html{
-        font-size: 75%;
+        font-size: 70%;
     }
 }
 
@@ -863,6 +865,9 @@ section:nth-child(even) .animate.scroll {
     section {
         padding: 10rem 4% 2rem;
     }
+    .about-content{
+        font-size: 60%;
+    } 
 }
 
 @media (max-width: 768px){
@@ -872,7 +877,10 @@ section:nth-child(even) .animate.scroll {
 
     .portfolios {
         grid-template-columns: repeat(2,1fr);
-    }    
+    }   
+    .about-content{
+        font-size: 50%;
+    } 
 }
 @media (max-width: 617px) {
     .portfolios {
