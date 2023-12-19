@@ -910,10 +910,31 @@ section:nth-child(even) .animate.scroll {
 
 
 /****************************BREAKPOINTS******************************/
+@media (max-width: 2000px){
+    html{
+     font-size: 80%;
+    }
+    .icon{
+     width: 14rem;
+     height: 14rem;
+    }
+    .skills{
+     padding-left:15rem;
+     padding-right:15rem;
+    }
+ }
 
 @media (max-width: 1500px){
    html{
     font-size: 80%;
+   }
+   .icon{
+    width: 12rem;
+    height: 12rem;
+   }
+   .skills{
+    padding-left:15rem;
+    padding-right:15rem;
    }
 }
 
@@ -921,6 +942,14 @@ section:nth-child(even) .animate.scroll {
     html{
         font-size: 70%;
     }
+    .icon{
+        width: 10rem;
+        height: 10rem;
+       }
+       .skills{
+        padding-left:10rem;
+        padding-right:10rem;
+       }
 }
 
 
@@ -935,6 +964,14 @@ section:nth-child(even) .animate.scroll {
     .about-content{
         font-size: 60%;
     } 
+    .icon{
+        width: 7rem;
+        height: 7rem;
+       }
+       .skills{
+            padding-left:10rem;
+            
+       }
 }
 
 @media (max-width: 768px){
@@ -948,11 +985,27 @@ section:nth-child(even) .animate.scroll {
     .about-content{
         font-size: 50%;
     } 
+    .icon{
+        width: 5rem;
+        height: 5rem;
+    }
+    .skills{
+        padding-left:5rem;
+        padding-right:5rem;  
+   }
 }
 @media (max-width: 617px) {
     .portfolios {
         grid-template-columns: 1fr;
     }
+    .icon{
+        width: 4rem;
+        height: 4rem;
+    }
+    .skills{
+        padding-left:4rem;
+        padding-right:4rem;  
+   }
 }
 @media (max-width: 520px){
     html {
