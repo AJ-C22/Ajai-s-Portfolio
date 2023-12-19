@@ -21,6 +21,7 @@
     row-gap: 100px;
     align-items: center;
     justify-content: center;
+
 }
 .headingTitle{
     letter-spacing: 0.33cm; 
@@ -49,8 +50,9 @@
 .heading{
     position: relative;
 }
-/******Loader*******/
-.loader-wrapper{
+
+/****************LOADER ****************/
+/*.loader-wrapper{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -68,7 +70,7 @@
     border: 4px solid white;
     top: 50%;
     animation: loader 2s infinite ease;
-}
+}*/
 
 .loader-inner{
     vertical-align: top;
@@ -412,7 +414,7 @@ section{
     z-index: 1;
     overflow: hidden;
 }
-
+/*
 .skills-box .skills-content::before {
     content: '';
     position: absolute;
@@ -498,7 +500,7 @@ section{
 .skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span {
     width: 90%;
 }
-
+*/
  /***********************************Portfolio Section*************************************/
 
 
