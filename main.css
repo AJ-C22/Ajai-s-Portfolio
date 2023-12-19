@@ -911,23 +911,21 @@ section:nth-child(even) .animate.scroll {
 
 /****************************BREAKPOINTS******************************/
 @media (max-width: 2000px){
-    html{
-     font-size: 80%;
-    }
+
     .icon{
-     width: 14rem;
-     height: 14rem;
-    }
-    .skills{
-     padding-left:15rem;
-     padding-right:15rem;
-    }
+        width: 14rem;
+        height: 14rem;
+       }
+       .skills{
+        padding-left:15rem;
+        padding-right:15rem;
+       }
  }
 
 @media (max-width: 1500px){
-   html{
-    font-size: 80%;
-   }
+    html{
+        font-size: 80%;
+       }
    .icon{
     width: 12rem;
     height: 12rem;
@@ -969,8 +967,7 @@ section:nth-child(even) .animate.scroll {
         height: 7rem;
        }
        .skills{
-            padding-left:10rem;
-            
+            padding-left:10rem;    
        }
 }
 
