@@ -158,6 +158,7 @@ span {
 
     padding: 50px 50px;
     color: white;
+    padding-right: 50rem;
 }
 
 .about-img img{
@@ -167,6 +168,7 @@ span {
 .about-content h2{
     text-align: left;
     line-height: 1.2;
+    
 }
 .about-content h3{
     font-size: 2rem;
@@ -403,8 +405,8 @@ section{
   }
   
   .icon {
-    width: 16rem;
-    height: 16rem;
+    width: 15rem;
+    height: 15rem;
   }
 
   .icon-card {
@@ -414,10 +416,11 @@ section{
     padding: 20px;
     margin: 10px;
     transition: .45s;
+    
   }
 
  .icon-card:hover{
-    transform: translateY(8px);
+    transform: translateY(6px);
     background-color: white ;
  }   
 /*
@@ -903,7 +906,8 @@ section:nth-child(even) .animate.scroll {
 .education.show-animate .animate.scroll,
 .skills.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll,
-.portfolio.show-animate .animate.scroll{
+.portfolio.show-animate .animate.scroll,
+.skills.show-animate .animate.scroll{
     transition-delay: calc(.3s * var(--i));
     width: 0;
 }
@@ -920,6 +924,7 @@ section:nth-child(even) .animate.scroll {
         padding-left:15rem;
         padding-right:15rem;
        }
+       
  }
 
 @media (max-width: 1500px){
@@ -934,6 +939,9 @@ section:nth-child(even) .animate.scroll {
     padding-left:15rem;
     padding-right:15rem;
    }
+   .about-page{
+    padding-right: 40rem;
+   }
 }
 
 @media (max-width: 1200px){
@@ -947,6 +955,9 @@ section:nth-child(even) .animate.scroll {
        .skills{
         padding-left:10rem;
         padding-right:10rem;
+       }
+       .about-page{
+        padding-right: 30rem;
        }
 }
 
@@ -989,6 +1000,9 @@ section:nth-child(even) .animate.scroll {
     .skills{
         padding-left:5rem;
         padding-right:5rem;  
+   }
+   .about-page{
+    padding-right: 3 0rem;
    }
 }
 @media (max-width: 617px) {
