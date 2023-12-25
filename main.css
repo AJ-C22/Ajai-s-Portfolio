@@ -80,6 +80,18 @@
     animation: loader-inner 2s infinite ease-in;
 }
 /*********************************************Navbar*****************************************/
+.header{
+    color:whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    justify-content: center;
+    align-items: center;
+    z-index:200;
+    transition: .3s;
+}
 .navbar{
     color:whitesmoke;
     position: fixed;
@@ -132,7 +144,14 @@
 .navbar a:hover,
 .navbar a.active{
     color: rgb(173, 167, 167);
-    
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: rgb(0, 128, 128);
+    cursor: pointer;
+    display: none;
+    left:0;
 }
 /******************************************About Section***********************************************/
 
@@ -378,8 +397,8 @@ section{
     background-color: #242424;
     min-height: auto;
     padding-bottom: 7rem;
-    padding-left: 20rem;
-    padding-right: 20rem;
+    
+   
 }
 
 .skills h2{
@@ -393,6 +412,7 @@ section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    padding-left: 10rem;
     
     }
     
@@ -917,12 +937,11 @@ section:nth-child(even) .animate.scroll {
 @media (max-width: 2000px){
 
     .icon{
-        width: 14rem;
-        height: 14rem;
+        width: 13rem;
+        height: 13rem;
        }
-       .skills{
-        padding-left:15rem;
-        padding-right:15rem;
+       .parent-box{
+        padding-left: 6rem;
        }
        
  }
@@ -932,12 +951,11 @@ section:nth-child(even) .animate.scroll {
         font-size: 80%;
        }
    .icon{
-    width: 12rem;
-    height: 12rem;
+    width: 10rem;
+    height: 10rem;
    }
-   .skills{
-    padding-left:15rem;
-    padding-right:15rem;
+   .parent-box{
+    padding-left: 6rem;
    }
    .about-page{
     padding-right: 40rem;
@@ -952,9 +970,8 @@ section:nth-child(even) .animate.scroll {
         width: 10rem;
         height: 10rem;
        }
-       .skills{
-        padding-left:10rem;
-        padding-right:10rem;
+       .parent-box{
+        padding-left: 5rem;
        }
        .about-page{
         padding-right: 30rem;
@@ -977,8 +994,8 @@ section:nth-child(even) .animate.scroll {
         width: 7rem;
         height: 7rem;
        }
-       .skills{
-            padding-left:10rem;    
+       .parent-box{
+        padding-left: 7rem;
        }
 }
 
@@ -997,13 +1014,37 @@ section:nth-child(even) .animate.scroll {
         width: 5rem;
         height: 5rem;
     }
-    .skills{
-        padding-left:5rem;
-        padding-right:5rem;  
-   }
+    .parent-box{
+        padding-left: 5rem;
+       }
    .about-page{
     padding-right: 3 0rem;
    }
+   #menu-icon{
+    display: block;
+    left:0;
+   }
+   .navbar {
+    position: absolute;
+    top: 100%;
+    left:0;
+    width: 100%;
+    padding: 0.75rem 4%;
+    background: red;
+    box-shadow: 0 .5rem 1rem blue;
+    text-align: left;
+   }
+   .navbar li{
+    display: block;
+    left:0;
+   }
+   .navbar a{
+    display:block;
+    font-size: 2rem;
+    margin:3rem 0;
+   }
+
+   
 }
 @media (max-width: 617px) {
     .portfolios {
@@ -1013,10 +1054,9 @@ section:nth-child(even) .animate.scroll {
         width: 4rem;
         height: 4rem;
     }
-    .skills{
-        padding-left:4rem;
-        padding-right:4rem;  
-   }
+    .parent-box{
+        padding-left: 4rem;
+       }
 }
 @media (max-width: 520px){
     html {
@@ -1031,6 +1071,13 @@ section:nth-child(even) .animate.scroll {
     .contact form .input-box .input-field {
         width: 100%;
     }
+    .icon{
+        width: 3rem;
+        height:3rem;
+    }
+    .parent-box{
+        padding-left: 2rem;
+       }
 }
 
 /************************ANIMATIONS******************/

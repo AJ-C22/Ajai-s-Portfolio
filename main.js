@@ -1,3 +1,11 @@
+// toggle icon navbar
+let menuIcon = document.querySelector('#menu');
+let header = document.querySelector('.header');
+
+//menuIcon.onclick = () => {
+//    menuIcon.classList.toggle('bx-x');
+//    header.classList.toggle('active');
+//}
 
 //scroll sections
 let sections = document.querySelectorAll('section');
@@ -27,7 +35,7 @@ function closeAbout(){
     about.classList.remove("open-about");
 }
 
-var messageArray = ["Aspiring Data Scientist / Developer"];
+var messageArray = ["Data Analyst / Developer"];
 var textPosition = 0;
 var speed = 80;
 
