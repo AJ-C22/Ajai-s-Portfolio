@@ -1071,8 +1071,8 @@ section:nth-child(even) .animate.scroll {
     margin:3rem 0;
    }
 
-   
 }
+
 @media (max-width: 617px) {
     .portfolios {
         grid-template-columns: 1fr;
@@ -1105,6 +1105,12 @@ section:nth-child(even) .animate.scroll {
     .parent-box{
         padding-left: 2rem;
        }
+    .contact-form{
+        width: 100%;
+    }
+    .contact{
+        font: 25%;
+    }
 }
 
 /************************ANIMATIONS******************/

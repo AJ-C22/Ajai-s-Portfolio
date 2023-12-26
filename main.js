@@ -69,6 +69,11 @@ window.onscroll = () => {
             sec.classList.remove('show-animate');
         }
     })
+
+    // remove toggle icon and navbar on click
+    menuIcon.classList.remove('bx-x');
+    header.classList.remove('active');
+
 }
 
 
