@@ -470,126 +470,8 @@ section{
     transform: translateY(6px);
     background-color: white ;
  }   
-/*
-.skills .skills-row{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5rem;
-}
 
-.skills-row .skills-column{
-    flex: 0.75 0.75 30rem;
-    padding-top: 1.25cm;
-}
-
-.skills-column .title{
-    position: relative;
-    display: inline-block;
-    font-size: 2.5rem;
-    margin: 0 0 1.5rem;
-}
- 
-.skills-column .skills-box{
-    position: relative;
-}
-.skills-box .skills-content{
-    position: relative;
-    width: 100%;
-    border: .2rem solid white;
-    border-radius: .6rem;
-    padding: .5rem  1.5rem;
-    z-index: 1;
-    overflow: hidden;
-}
-/*
-.skills-box .skills-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color:#1b1b1a;
-    z-index: -1;
-    transition: .6s;
-
-}
-
-.skills-box .skills-content:hover::before {
-    width: 100%;
-}
-
-.skills-content .progress{
-    padding: 1rem 0;
-}
-
-.skills-content .progress h3{
-    font-size: 1.7rem;
-    display: flex;
-    justify-content: space-between;
-    color: whitesmoke;
-}
-.skills-content .progress h3 span {
-    color: whitesmoke;
-}
-
-.skills-content .progress .bar{
-    height: 2.5rem;
-    border-radius: .6rem;
-    border: .2rem solid rgb(173, 167, 167);
-    padding: .5rem;
-    margin: 1rem 0;
-}
-
-.skills-content .progress .bar span{
-    display: block;
-    height: 100%;
-    border-radius: .3rem;
-    background: rgb(173, 167, 167);
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
-    width: 90%;
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
-    width: 70%;
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-    width: 80%;
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
-    width:75%;
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
-    width: 65%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
-    width: 95%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-    width: 80%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
-    width: 85%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
-    width: 85%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span {
-    width: 90%;
-}
-*/
  /***********************************Portfolio Section*************************************/
-
 
 .portfolio h2{ 
 
@@ -692,8 +574,8 @@ section{
 
 /********************************Contact Section********************************/
 
-
 .contact{
+    position: relative;
     background-color: #242424;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -790,133 +672,49 @@ section{
     transform: scale(1.07);
     cursor: pointer;
 }
-/*
-.contact {
-    min-height: auto;
-    padding-bottom: 7rem;
-    background-color: #242424;
+
+#msg{
+    color: rgb(62, 117, 78);
+    margin-top: -10px;
+    display:block;
 }
 
-.contact h2{
-    display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
-.contact form{
-    max-width: 70rem;
-    margin: 0 auto;
+/*************FOOTER**************/
+.footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 1rem 9%;
+    background: black;
     text-align: center;
 }
 
-.contact form .input-box{
+.footer p{
+    color:#505557;
+    font-size: 1.2rem;
+}
+
+.footer-iconTop a{
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact form .input-box .input-field{
-    position: relative;
-    width: 49%;
-    margin: .8rem 0;
-}
-
-.contact form .input-box .input-field input,
-.contact form .textarea-field textarea{
-    width: 100%;
-    height: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color:rgb(105, 102, 102);
-    background-color: transparent;
-    border-radius: .6rem;
-    border: .2rem solid white;
-}
-
-.contact form .input-box .input-field input::placeholder,
-.contact form .textarea-field textarea::placeholder {
-    color: rgb(173, 167, 167);
-}
-
-.contact form .focus {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: white;
-    opacity: 5%;
-    border-radius: .6rem;
-    z-index: 1;
-    transition: .4s;
-}
-
-.contact form .input-box .input-field input:focus~.focus,
-.contact form .input-box .input-field input:valid~.focus,
-.contact form .textarea-field textarea:focus~.focus,
-.contact form .textarea-field textarea:valid~.focus {
-    width: 100%;
-}
-
-.contact form .textarea-field{
-    position: relative;
-    margin: .8rem 0 2.7rem;
-    display: flex;
-}
-
-.contact form .textarea-field textarea{
-    resize: none;
-}
-
-.contact form .btn-box.btns .btn {
-    cursor: pointer;
-}
-
-.btn-box{
-    position: relative;
-    display: flex;
-    justify-content:flex-end;
-    width: 34.5rem;
-    height: 5rem;
-    padding-left: 30rem;
-}
-
-.btn-box .btn{
-    position: relative;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 15rem;
-    height: 100%;
-    background: #222222;
+    padding: .8rem;
+    background:#0c0908;
     border: .2rem solid white;
-    border-radius: .8rem;
-    font-size: 1.4rem;
-    font-weight: 400;
-    letter-spacing: .1rem;
+    border-radius: .6rem;
+
+}
+
+.footer-iconTop a i{
+    font-size: 2.4rem;
+    color:white;
+}
+.footer a{
     color: white;
-    overflow:hidden;
-    transition: .5s;
-    z-index: 1;
 }
-
-.btn-box .btn::before{
-    content: '';
-    position: absolute;
-    top:0;
-    left:0;
-    width:0;
-    height:100%;
-    background:rgb(160, 154, 154);
-    z-index:-1;
-    transition: .5s;
-}
-
-.btn-box .btn:hover::before {
-    width: 100%;
-}
-*/
 /*****************************ANIMATION RELOAD & SCROLL*****************************/
 .animate{
     position: absolute;
@@ -1082,12 +880,22 @@ section:nth-child(even) .animate.scroll {
         height: 4rem;
     }
     .parent-box{
-        padding-left: 4rem;
+        padding-left: 5rem;
        }
+    .contact{
+        grid-template-columns: 1fr;
+    }
 }
+
 @media (max-width: 520px){
     html {
         font-size: 50%;
+    }
+    .contact-text h2{
+        font-size: 5rem;
+    }
+    .contact-text h3{
+        font-size: 3rem;
     }
 
 }
@@ -1103,7 +911,7 @@ section:nth-child(even) .animate.scroll {
         height:3rem;
     }
     .parent-box{
-        padding-left: 2rem;
+        padding-left: 5rem;
        }
     .contact-form{
         width: 100%;

@@ -264,86 +264,9 @@
             </div>
         </div>
     </div>
-</div>
-    
+</div>    
   </section>
-<!--
-    
-<section>
-        <div class = "skills-row">
-            <div class = "skills-column">
-                <h3 class = "title"> Technical Skills<span class = "animate scroll" style ="--i:2"></span></h3>
 
-                <div class = "skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>Python <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Javascript <span>70%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>CSS <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>HTML <span>75%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>C# <span>65%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                    </div>
-
-                    <span class = "animate scroll" style ="--i:3"></span>
-                </div>
-            </div>
-
-            <div class = "skills-column">
-                <h3 class = "title"> Soft Skills<span class = "animate scroll" style ="--i:5"></span></h3>
-
-                <div class = "skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>Problem-Solving <span>95%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Communication <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Teamwork <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Organization <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Project Management <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                    </div>
-
-                    <span class = "animate scroll" style ="--i:6"></span>
-                </div>
-            </div>
-            
-        </div>
-    </section>
--->
 <!---------------------Portofolio Section Design------------------->
 
     <section class="portfolio" id="portfolio">
@@ -465,70 +388,49 @@
             <span class = "animate scroll" style ="--i:4"></span>
         </div>
     </div>
-        <div class = "contact-form">
-            <form action = "">
-                <input type = "name" placeholder = "Your Name" required>
-                <input type = "email" placeholder = "Your Email" required>
-                <input type = "number" placeholder = "Your Phone Number" required>
-                <textarea name = "" id="" cols="35" rows ="10" placeholder = "Text"></textarea>
-                <input type = "submit" value="Send Message" class = "submit" required>
+    <div class = "contact-form">
+        <form name ="submit-to-google-sheet">
+            <input type = "name" name="Name" placeholder = "Your Name" required>
+            <input type = "email" name ="Email" placeholder = "Your Email" required>
+            <textarea name = "Message" id="" cols="35" rows ="10" placeholder = "Text"></textarea>
+            <input type = "submit" value="Send Message" class = "submit" required>
 
-                <span class = "animate scroll" style ="--i:5"></span>
-            </form>
-
-            
-        </div>
-    
+            <span class = "animate scroll" style ="--i:5"></span>
+        </form>
+        <span id="msg"></span>   
+    </div>
+        
 </section>
-
-<!--
-<section class = "contact" id="contact">
-    <h2 class = "heading"> Contact <span>Me<span class = "animate scroll" style ="--i:1"></span></h2>
-
-    <form action = "#">
-        <div class ="input-box">
-            <div class = "input-field">
-                <input type = "text" placeholder="Full Name" required>
-                <span class = "focus"></span>
-            </div>
-             <div class = "input-field">
-                <input type = "text" placeholder="Email Address" required>
-                <span class = "focus"></span>
-        </div>
-
-        <span class = "animate scroll" style ="--i:3"></span>
+<footer class = "footer">
+    <div class="footer-text">
+        <p> ©2023 | ajaischandi@gmail.com</p>
     </div>
 
-    <div class ="input-box">
-        <div class = "input-field">
-            <input type = "number" placeholder="Mobile Number" required>
-            <span class = "focus"></span>
-        </div>
-         <div class = "input-field">
-            <input type = "text" placeholder="Email Subject" required>
-            <span class = "focus"></span>
+    <div class = "footer-iconTop">
+        <a href='#'><i class='bx bx-up-arrow-alt' ></i></a>
     </div>
+</footer>
 
-    <span class = "animate scroll" style ="--i:5"></span>
-</div>
 
-    <div class="textarea-field">
-        <textarea name = "" id="" cols="30" rows = "10" placeholder="Your Message" required></textarea>
-        <span class = "focus"></span>
+<script src="main.js"></script>
 
-        <span class = "animate scroll" style ="--i:7"></span>
-    </div>
-
-    <div class = "btn-box btns">  
-        <button type = "submit" class = "btn">Submit</button>
-
-        <span class = "animate scroll" style ="--i:9"></span>
-    </div>
-    </form>
-</section>
--->
-    
-    <script src="main.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwHENbnhth-_rg4cswEiqCUo7p8gQwvsLfmoiezkmnVGgcy1FXQgbGxn1ed4m58SXjtSA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
-
 </html>
