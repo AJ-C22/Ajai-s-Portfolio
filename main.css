@@ -205,7 +205,7 @@ span {
 
     padding: 50px 50px;
     color: white;
-    padding-right: 50rem;
+    padding-right: 50%;
 }
 
 .about-img img{
@@ -221,7 +221,7 @@ span {
     font-size: 2rem;
 }
 .about-content p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin: 2rem 0 3rem;
 }
 .open-about{
@@ -343,6 +343,7 @@ section{
 .education .education-row{
     padding-top: 2cm;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 5rem;
 }
@@ -902,6 +903,7 @@ section:nth-child(even) .animate.scroll {
 }
 @media (max-width: 462px){
     .education{
+        display: block;
         padding: 10rem 4% 5rem 5%;
     }
     .contact form .input-box .input-field {
