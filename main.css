@@ -205,7 +205,8 @@ span {
 
     padding: 50px 50px;
     color: white;
-    padding-right: 50rem;
+    padding-right: 60
+    rem;
 }
 
 .about-img img{
@@ -228,19 +229,6 @@ span {
     opacity: 85%;
     z-index: 900;
 
-}
-
-.btn{
-    background-color: transparent;
-    border: transparent;
-    font-weight: 600;
-    letter-spacing: 0.05cm;
-    color: rgb(105, 102, 102);
-    text-decoration: none;
-    width: 100%;
-    font-size: 1rem;
-    transition: all 0.3s ease-out;
-    cursor: pointer;
 }
 
 .about-page .button{
@@ -844,7 +832,7 @@ section:nth-child(even) .animate.scroll {
         padding-left: 5rem;
        }
    .about-page{
-    padding-right: 3 0rem;
+    padding-right: 3rem;
    }
    #menu-icon{
     display: block;
