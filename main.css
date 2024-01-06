@@ -426,7 +426,8 @@ section{
     background-color: #242424;
     min-height: auto;
     padding-bottom: 7rem;
-    
+    margin: auto;
+    flex-wrap: wrap;
    
 }
 
