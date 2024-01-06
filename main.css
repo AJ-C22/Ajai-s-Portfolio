@@ -887,6 +887,13 @@ section:nth-child(even) .animate.scroll {
     .contact{
         grid-template-columns: 1fr;
     }
+    .about-page{
+        padding-right:  3rem;
+        padding-left: 3rem;
+       }
+    .skills-wrapper img{
+        padding: 0.5rem;
+    }
 }
 
 @media (max-width: 520px){
@@ -912,10 +919,10 @@ section:nth-child(even) .animate.scroll {
     .icon{
         width: 3rem;
         height:3rem;
+        padding-right: 0rem;
     }
-    .parent-box{
-        padding-left: 5rem;
-       }
+   
+
     .contact-form{
         width: 100%;
     }
@@ -923,7 +930,13 @@ section:nth-child(even) .animate.scroll {
         font: 25%;
     }
 }
-
+ @media (max-width: 335px){
+    .icon{
+        width: 2rem;
+        height:2rem;
+       
+    }
+ }
 /************************ANIMATIONS******************/
 @keyframes showRight {
     100% {
